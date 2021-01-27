@@ -1,0 +1,14 @@
+-include $(TOPDIR)/Make.defs
+
+APPNAME = zenoh_pub
+PRIORITY = SCHED_PRIORITY_DEFAULT
+STACKSIZE = 2048
+
+ASRCS =
+CSRCS =
+MAINSRC = zenoh_pub.c
+
+CONFIG_MY_APP_PROGNAME ?= zenoh_pub$(EXEEXT)
+PROGNAME = $(CONFIG_MY_APP_PROGNAME)
+
+include $(APPDIR)/Application.mk
