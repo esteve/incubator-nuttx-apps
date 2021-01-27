@@ -1,7 +1,5 @@
 config EXAMPLES_ZENOH_PUB
-bool "Zenoh publisher example"
-default n
----help---
-Enable the \"zenoh publisher\" example
-if EXAMPLES_ZENOH_PUB
-endif
+    bool "Zenoh publisher example"
+    default n
+    ---help---
+    Enable the \"zenoh publisher\" example
